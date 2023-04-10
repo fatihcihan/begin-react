@@ -2,21 +2,25 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 
-// function component
-/* function App() { 
-    return <h1>Intro React.</h1>;
-} */
+// JSX
 
+// <button type="button" style="padding: 10px; color: white; background-color: red; border:2px solid yellow;">Html Button</button>
 
-// class component
-class App2 extends React.Component{
-    render(){
-        return <h1>Intro React..</h1>
-    }
+function App() {
+    // const buttonValue = "Click me";
+    const str1 = "Click Click ";
+    const str2 = "Bang Bang";
+    return (
+        <div>
+            <button className="jsxClass" type="button" style={{ padding: '10px', color: 'white', backgroundColor: 'blue', border: '2 px solid yellow' }}>{str1.concat(str2)}</button>
+
+        </div>
+    );
 }
 
+
+
 ReactDOM.render(
-    <App2 />,
-    //  document.getElementById('root')
-    document.querySelector('#root')
+    <App />,
+    document.getElementById('root')
 );
