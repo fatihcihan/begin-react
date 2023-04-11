@@ -1,21 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Card from './components/Card';
 
 
-// JSX
-
-// <button type="button" style="padding: 10px; color: white; background-color: red; border:2px solid yellow;">Html Button</button>
-
-function App() {
-    // const buttonValue = "Click me";
-    const str1 = "Click Click ";
-    const str2 = "Bang Bang";
+const App = () => {
     return (
         <div>
-            <button className="jsxClass" type="button" style={{ padding: '10px', color: 'white', backgroundColor: 'blue', border: '2 px solid yellow' }}>{str1.concat(str2)}</button>
-
+            <div className="card-group">
+                <Card cardTitle="Card 1" />
+                <Card cardTitle="Card 2" />
+                <Card cardTitle="Card 3" />
+            </div>
         </div>
-    );
+    )
 }
 
 
