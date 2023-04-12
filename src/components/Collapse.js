@@ -1,41 +1,36 @@
 import React from "react";
 
 class Collapse extends React.Component {
-    constructor() {
-        super();
 
-        this.state = {
-            showContent: false
-        }
-
-        // this.showMore = this.showMore.bind(this);
-    }
-
+    state = { showContent: false }
 
     showMore = () => {
-        // console.log(this);
-        this.setState({ showContent: !this.state.showContent })
-   
+        this.setState({ showContent: !this.state.showContent });
     }
 
-    // showMore() {
-    //     // console.log(this);       undefined
-    // }  
+    /*  componentDidMount() {
+         console.log("Component created");
+     }
+ 
+     componentDidUpdate() {
+         console.log("Component update");
+     } */
 
     render() {
         return (
             <div>
                 <button onClick={this.showMore} className="btn btn-primary w-100" >
-                    Link with href
+                    {/* {this.props.children.props.cardTitle} */}
+                    {React.Children.map(this.props.children, children => children.props.cardTitle)}
                 </button>
                 {
                     this.state.showContent ? (
                         <div className="collapse show">
-                            {this.props.children}
+                            {/* {this.props.children} */}
+                            {React.Children.map(this.props.children, children => children)}
                         </div>
                     ) : null
                 }
-
             </div>
         );
     }
