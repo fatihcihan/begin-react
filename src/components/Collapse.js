@@ -1,13 +1,14 @@
 import React from 'react';
 
-const Collapse = () => {
+const Collapse = (props) => {
+    console.log(props.children, 'card component');
     return (
         <div>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <a className="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 Link with href
             </a>
-            <div class="collapse" id="collapseExample">
-                The content that opens when you click on the link
+            <div className="collapse" id="collapseExample">
+                {props.children}
             </div>
         </div>
     );
