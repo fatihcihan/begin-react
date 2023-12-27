@@ -15,5 +15,11 @@ class Card extends React.Component {
         );
     }
 }
+
+Card.defaultProps = {
+    cardTitle: 'Default card title'    
+}
+
+
 export default Card;
 
