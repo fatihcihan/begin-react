@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Functional component
 const Collapse = (props) => {
     console.log(props.href, 'collapse props');
     return (
