@@ -2,7 +2,6 @@ import React from 'react';
 
 // Functional component
 const Collapse = (props) => {
-    console.log(props.href, 'collapse props');
     return (
         <div>
             <a className="btn btn-primary w-100" data-bs-toggle="collapse" href={"#".concat(props.href)} role="button" aria-expanded="false" aria-controls="collapseExample">
