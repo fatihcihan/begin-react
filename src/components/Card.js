@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // Class based component
 class Card extends React.Component {
@@ -17,7 +18,11 @@ class Card extends React.Component {
 }
 
 Card.defaultProps = {
-    cardTitle: 'Default card title'    
+    cardTitle: 'Default card title'
+}
+
+Card.propTypes = {
+    cardText: PropTypes.string
 }
 
 
