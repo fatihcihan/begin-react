@@ -10,7 +10,6 @@ function App() {
           <div className="col px-2">
             <Collapse href="collapseExample1">
               <Card
-                cardText="Lorem ipsum text 1"
                 updatedTime="Last updated 1 min ago..."
                 image="https://picsum.photos/id/8/200/300" />
             </Collapse>
