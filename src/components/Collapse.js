@@ -10,15 +10,17 @@ class Collapse extends React.Component {
         }
         // console.log(this);  // Collapse objects
 
-        this.showMore = () => {
+        /* this.showMore = () => {
             console.log(this);
-        }
+        } */
+
+        this.showMore = this.showMore.bind(this);   // connect this to this in showMore (will reference the collapse object)
     };
 
-    /* showMore() {
-        // this.setState({ showContent: true });
-        console.log(this);  // undefined
-    } */
+    showMore() {
+        this.setState({ showContent: true });
+        // console.log(this);  // undefined
+    }
 
     render() {
         // console.log(this);   // Collapse objects
