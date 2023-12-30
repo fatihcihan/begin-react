@@ -18,8 +18,12 @@ class Collapse extends React.Component {
     };
 
     showMore = () => {
-        console.log(this);
-        this.setState({ showContent: !this.state.showContent })
+        // console.log(this);
+        this.setState({ showContent: !this.state.showContent });
+
+       /*  this.state = {       // Do not mutate state directly. Use setState()
+            showContent: true
+        } */
     }
 
     /* showMore() {
