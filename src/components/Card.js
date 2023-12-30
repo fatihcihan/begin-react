@@ -22,7 +22,7 @@ Card.defaultProps = {
 }
 
 Card.propTypes = {
-    cardText: PropTypes.string.isRequired
+    cardText: PropTypes.string
 }
 
 
