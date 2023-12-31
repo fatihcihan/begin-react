@@ -21,10 +21,18 @@ class Collapse extends React.Component {
         // console.log(this);
         this.setState({ showContent: !this.state.showContent });
 
-       /*  this.state = {       // Do not mutate state directly. Use setState()
-            showContent: true
-        } */
+        /*  this.state = {       // Do not mutate state directly. Use setState()
+             showContent: true
+         } */
     }
+
+    componentDidMount() {
+        console.log('component created');
+    }
+
+    componentDidUpdate() {
+        console.log('component updated');
+    }    
 
     /* showMore() {
         this.setState({ showContent: true });
@@ -33,6 +41,7 @@ class Collapse extends React.Component {
 
     render() {
         // console.log(this);   // Collapse objects
+        console.log('render worked');
         return (
             <div>
                 <button className="btn btn-primary w-100" onClick={this.showMore}>
