@@ -3,19 +3,16 @@ import React from 'react';
 // Class component
 class Collapse extends React.Component {
 
-    constructor() {
-        super();
-        this.state = {
-            showContent: false
-        }
-        // console.log(this);  // Collapse objects
+    state = { showContent: false }
 
-        /* this.showMore = () => {
-            console.log(this);
-        } */
+    // console.log(this);  // Collapse objects
 
-        // this.showMore = this.showMore.bind(this);   // connect this to this in showMore (will reference the collapse object)
-    };
+    /* this.showMore = () => {
+        console.log(this);
+    } */
+
+    // this.showMore = this.showMore.bind(this);   // connect this to this in showMore (will reference the collapse object)
+
 
     showMore = () => {
         // console.log(this);
@@ -26,13 +23,13 @@ class Collapse extends React.Component {
          } */
     }
 
-    componentDidMount() {
-        console.log('component created');
-    }
-
-    componentDidUpdate() {
-        console.log('component updated');
-    }    
+    /*  componentDidMount() {
+         console.log('component created');
+     }
+ 
+     componentDidUpdate() {
+         console.log('component updated');
+     } */
 
     /* showMore() {
         this.setState({ showContent: true });
@@ -41,11 +38,11 @@ class Collapse extends React.Component {
 
     render() {
         // console.log(this);   // Collapse objects
-        console.log('render worked');
+        // console.log('render worked');
         return (
             <div>
                 <button className="btn btn-primary w-100" onClick={this.showMore}>
-                    Link with href
+                    {this.props.children.props.cardTitle}
                 </button>
                 {
                     this.state.showContent ? (
