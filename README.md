@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Definitions and concepts to know about React before starting the project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a beginner-level React application. The project includes several components: Card, Collapse and App.
 
-## Available Scripts
+## Project Structure
 
-In the project directory, you can run:
+-  **node_modules:** This folder contains the dependencies that are necessary for the project to run and are usually not added to the repo.
 
-### `npm start`
+-  **public:** This folder usually contains HTML files, favicons, CSS files, images and other static files.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-  **index.html:** This is where the React application will be placed in the DOM. In other words, it works by targeting the div tag whose id is root and the components placed here are displayed in the browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-  **src:** This is where the actual code of the application resides. With the help of webpack and babel, all the code we write in src is placed in the files in public and index.html reduces it to the file structure that our browser will understand. 
 
-### `npm test`
+-  **index.js:** This is one of the basic building blocks of the project and is the entry point. It is also where the content in App.js is rendered
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-  **App.js:** The main component, the App component, is located here. Other components are used here.
 
-### `npm run build`
+-  **Collapse.js:** The Collapse component contains a button that opens and closes the content.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-  **Card.js:** The Card component defines the appearance of a card.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-  **.gitignore:** Ensures that Git does not store certain files or folders. This is typically used for files that are not intended to be stored, such as build files, temporary files or sensitive information.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-  **package.json:** It contains the project name, version, dependencies and other important information.
 
-### `npm run eject`
+-  **package-lock.json:** A file containing the fixed versions of the package dependencies used in the project and the links between the dependencies. This helps to manage the project's dependencies in a secure and consistent way.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-  **README:** A text file that contains basic information about a project or software package, such as its use, installation, configuration and contributor process.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Terminology 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-  **React elements:** React elements are one of the smallest building blocks that can be created in a React application. A React element can be a simple HTML tag, a piece of text or a more complex component.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **React cromponents:** A JavaScript code consisting of a function or a class, this JavaScript code can be used to display HTML on our page using JSX, or it can be used to display interaction with event handler codes (we can think of it as a plug-in).
 
-## Learn More
+- **JSX (JavaScript XML):** In its simplest form, we can think of it as adding an HTML-like syntax to classic JavaScript. It is an important tool for defining and creating user interfaces in React.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Props:** It provides data flow between components, which are the most basic units of React (from parent to child).
